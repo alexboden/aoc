@@ -1,9 +1,10 @@
-with open("1.input") as f:
-    lines = f.readlines()
+import sys
+
+lines = sys.stdin.read()
 
 input = []
 
-for line in lines:
+for line in lines.split('\n'):
 	input.append((line[:1], int(line[1:])))
 
 dial = 50
