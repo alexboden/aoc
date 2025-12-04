@@ -1,6 +1,5 @@
 use std::io::{self, Read};
 
-// True if the first half of the digits equals the second half (e.g., 123123).
 fn is_repeat(i: i64) -> bool {
     let s = i.to_string();
 	for j in 1..s.len() {
